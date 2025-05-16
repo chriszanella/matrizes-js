@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/output.css" />
+
+    <title>Matrizes com Javascript</title>
+  </head>
+  <body class="w-full h-full bg-blue-900 p-4">
+    <div
+      class="w-full max-w-3xl h-full min-h-96 max-3xl mx-auto p-2 bg-gray-200 flex "
+    >
+    
+    <form class="inline-flex flex-col gap-2 mt-4">
+        <h1 class="font-bold text-2xl">Criação de matrizes</h1>
+
+        <!-- Obter quantidade de linhas da matriz. -->
+        <label for="rowsMatrices" class="font-medium text-lg"
+          >Quantidade de linhas na matriz:</label
+        >
+        <input type="number" id="rowsMatrices" class="bg-amber-400" required/>
+
+        <!-- Obter quantidade de colunas da matriz. -->
+        <label for="columnsMatrices" class="font-medium text-lg"
+          >Quantidade de colunas na matriz:</label
+        >
+        <input type="number" id="columnsMatrices" class="bg-amber-400" required/>
+
+        <div class="flex justify-evenly">
+          <div class="flex flex-col">
+            <label for="valueI" class="font-medium text-lg"
+              >Valor * i</label
+            >
+            <input type="number" id="valueI" class="bg-amber-400 w-16" required>
+          </div>
+
+          <p class="text-5xl">+</p>
+
+          <div class="flex flex-col">
+            <label for="valueJ" class="font-medium text-lg">Valor * j</label class="font-medium text-lg">
+            <input type="number" id="valueJ" class="bg-amber-400 w-16" required>
+          </div>
+        </div>
+
+        <button type="submit" id="enviar" class="text-lg font-medium bg-gray-500 rounded-sm hover:bg-gray-600 duration-300 cursor-pointer">Criar Matriz</button>
+      </form>
+
+      <div class="overflow-hidden flex-1 p-8 flex flex-col justify-center items-center" id="recebe"></div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
