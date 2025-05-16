@@ -22,7 +22,6 @@ function criarMatriz() {
     controleDeLinha.push(controleDeColuna);
     controleDeColuna = [];
   }
-  console.log(controleDeLinha);
   return controleDeLinha
 }
 
